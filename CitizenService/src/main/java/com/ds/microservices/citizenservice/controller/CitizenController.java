@@ -18,7 +18,7 @@ public class CitizenController {
     private CitizenService citizenService;
 
 
-    @GetMapping("/citizen/{id}")
+    @GetMapping("/Citizen/{id}")
     public CitizenBean getCitizenById(@PathVariable int id) {
         logger.info("[CitizenController.java:23] get citizen by id: {}", id);
         return citizenService.findByCitizenId(id);

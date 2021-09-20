@@ -26,7 +26,7 @@ public class VaccinationCenterController {
         return vaccinationCenterService.getByVaccinationCenterId(id);
     }
 
-    @GetMapping("/getAllVaccinationCenters")
+    @GetMapping("/GetAllVaccinationCenters")
     public List<VaccinationCenterBean> getAllVaccinationCenters() {
         logger.info("[VaccinationCenterController.java:31] get all vaccination centers");
         return vaccinationCenterService.getAllVaccinationCenters();
